@@ -1,5 +1,4 @@
-import type { ComponentType } from "react";
-import type { SVGProps } from "react";
+import type { ComponentType, SVGProps } from "react";
 import {
   FenceIcon,
   LeaningTreeIcon,
@@ -34,7 +33,7 @@ const services: {
   },
   {
     icon: LeaningTreeIcon,
-    title: "Leaning & storm-damaged",
+    title: "Leaning and storm-damaged",
     description:
       "Urgent call-outs for split, uprooted or dangerously leaning trees after storms.",
   },
@@ -46,7 +45,7 @@ const services: {
   },
   {
     icon: StumpIcon,
-    title: "Stumps & clean-up",
+    title: "Stumps and clean-up",
     description:
       "Stump grinding, chipping and full site clean-up so you're left with a tidy yard.",
   },
@@ -54,26 +53,31 @@ const services: {
 
 export function Services() {
   return (
-    <section id="services" className="px-6 py-[88px]">
-      <div className="mx-auto flex max-w-6xl flex-col gap-10">
-        <div className="flex max-w-[680px] flex-col gap-3">
-          <h2 className="font-display text-[clamp(1.9rem,3.5vw,2.6rem)] font-bold">
+    <section id="services" className="bg-bark-soft px-6 py-[88px]">
+      <div className="mx-auto flex max-w-6xl flex-col gap-12">
+        <div className="flex max-w-[640px] flex-col gap-3">
+          <h2 className="font-display text-[clamp(1.9rem,3.5vw,2.6rem)] font-semibold">
             The jobs other teams won&rsquo;t touch
           </h2>
-          <p className="text-lg leading-relaxed text-slate">
+          <p className="text-lg leading-relaxed text-ivory-soft">
             We specialise in difficult, high-consequence removals where a
             mistake costs a roof, a wall or worse.
           </p>
         </div>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-5">
-          {services.map(({ icon: ServiceIcon, title, description }) => (
+        <div className="grid grid-cols-1 gap-x-12 gap-y-10 sm:grid-cols-2">
+          {services.map(({ icon: ServiceIcon, title, description }, i) => (
             <div
               key={title}
-              className="flex flex-col gap-3 rounded-[14px] border border-line bg-white p-7"
+              className="flex flex-col gap-3 border-t border-timber-line pt-6"
             >
-              <ServiceIcon width={32} height={32} className="text-forest-700" />
-              <h3 className="font-display text-xl">{title}</h3>
-              <p className="text-base leading-relaxed text-slate">
+              <div className="flex items-center gap-3">
+                <span className="font-display text-sm text-safety">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <ServiceIcon width={22} height={22} className="text-ivory-soft" />
+                <h3 className="font-display text-xl font-medium">{title}</h3>
+              </div>
+              <p className="text-base leading-relaxed text-ivory-soft">
                 {description}
               </p>
             </div>

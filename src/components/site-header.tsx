@@ -9,11 +9,11 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="bg-forest-900 text-cream">
+    <header className="border-b border-timber-line bg-bark text-ivory">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-[18px]">
         <Link href="#" className="flex items-center gap-2.5">
-          <LogoMark size={28} className="text-accent" />
-          <span className="font-display text-xl font-bold tracking-tight">
+          <LogoMark size={26} className="text-safety" />
+          <span className="font-display text-xl font-semibold tracking-tight">
             RG Timbers
           </span>
         </Link>
@@ -22,13 +22,13 @@ export function SiteHeader() {
           className="flex flex-wrap items-center gap-6 text-[15px]"
         >
           {links.map((link) => (
-            <a key={link.href} href={link.href} className="text-cream">
+            <a key={link.href} href={link.href} className="text-ivory-soft">
               {link.label}
             </a>
           ))}
           <a
             href="#quote"
-            className="rounded-lg bg-accent px-[18px] py-3 font-semibold text-forest-900"
+            className="rounded-[4px] bg-safety px-[18px] py-3 font-semibold text-ivory"
           >
             Get a quote
           </a>

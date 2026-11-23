@@ -9,24 +9,23 @@ const areas = [
 
 export function AreasCovered() {
   return (
-    <section className="px-6 py-[72px]">
+    <section className="bg-bark px-6 py-[72px]">
       <div className="mx-auto flex max-w-6xl flex-col gap-5">
-        <h2 className="font-display text-[clamp(1.6rem,3vw,2.1rem)] font-bold">
+        <h2 className="font-display text-[clamp(1.6rem,3vw,2.1rem)] font-semibold">
           Areas we cover
         </h2>
-        <div className="flex flex-wrap gap-2.5">
-          {areas.map((area) => (
-            <a
-              key={area}
-              href="#"
-              className="rounded-full border border-line bg-white px-[18px] py-3 text-[15px]"
-            >
-              {area}
-            </a>
+        <div className="flex flex-wrap items-center text-[15px]">
+          {areas.map((area, i) => (
+            <span key={area} className="flex items-center">
+              {i > 0 && (
+                <span className="mx-4 h-4 w-px bg-timber-line" aria-hidden="true" />
+              )}
+              <a href="#" className="text-ivory">
+                {area}
+              </a>
+            </span>
           ))}
-          <span className="rounded-full border border-dashed border-input-border px-[18px] py-3 text-[15px] text-slate">
-            More regions coming
-          </span>
+          <span className="ml-4 text-ivory-soft">More regions coming</span>
         </div>
       </div>
     </section>

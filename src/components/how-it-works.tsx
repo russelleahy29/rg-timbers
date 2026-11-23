@@ -27,19 +27,22 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how" className="bg-cream-dark px-6 py-[88px]">
+    <section id="how" className="bg-bark px-6 py-[88px]">
       <div className="mx-auto flex max-w-6xl flex-col gap-10">
-        <h2 className="font-display text-[clamp(1.9rem,3.5vw,2.6rem)] font-bold">
+        <h2 className="font-display text-[clamp(1.9rem,3.5vw,2.6rem)] font-semibold">
           How it works
         </h2>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(230px,1fr))] gap-7">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (
-            <div key={step.number} className="flex flex-col gap-2.5">
-              <span className="font-display text-4xl font-bold text-forest-700">
+            <div
+              key={step.number}
+              className="flex flex-col gap-3 border-t border-safety pt-4"
+            >
+              <span className="font-display text-sm text-ivory-soft">
                 {step.number}
               </span>
-              <h3 className="text-[19px]">{step.title}</h3>
-              <p className="text-base leading-relaxed text-slate">
+              <h3 className="font-display text-lg font-medium">{step.title}</h3>
+              <p className="text-base leading-relaxed text-ivory-soft">
                 {step.description}
               </p>
             </div>
