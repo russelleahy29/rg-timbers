@@ -29,7 +29,7 @@ export function BusinessCta() {
           ))}
           <a
             href="#quote"
-            className="mt-2 self-start rounded-[6px] bg-safety px-[22px] py-3.5 font-semibold text-ivory"
+            className="mt-2 self-start rounded-[6px] bg-safety px-[22px] py-3.5 font-semibold text-ivory transition-colors hover:bg-safety-dark"
           >
             Ask about a maintenance plan
           </a>

@@ -22,13 +22,13 @@ export function Hero() {
           <div className="flex flex-wrap gap-3.5">
             <a
               href="#quote"
-              className="rounded-[4px] bg-safety px-[26px] py-4 text-[17px] font-semibold text-ivory"
+              className="rounded-[4px] bg-safety px-[26px] py-4 text-[17px] font-semibold text-ivory transition-colors hover:bg-safety-dark"
             >
               Get a free quote
             </a>
             <a
               href="https://wa.me/"
-              className="flex items-center gap-2.5 rounded-[4px] border border-forest-line px-6 py-3.5 text-[17px] font-semibold text-ivory"
+              className="flex items-center gap-2.5 rounded-[4px] border border-forest-line px-6 py-3.5 text-[17px] font-semibold text-ivory transition-colors hover:border-ivory-soft hover:bg-forest-soft"
             >
               <WhatsAppIcon size={20} />
               WhatsApp us photos

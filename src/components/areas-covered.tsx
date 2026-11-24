@@ -20,7 +20,10 @@ export function AreasCovered() {
               {i > 0 && (
                 <span className="mx-4 h-4 w-px bg-paper-line" aria-hidden="true" />
               )}
-              <a href="#" className="font-semibold text-forest">
+              <a
+                href="#"
+                className="font-semibold text-forest transition-colors hover:text-safety"
+              >
                 {area}
               </a>
             </span>

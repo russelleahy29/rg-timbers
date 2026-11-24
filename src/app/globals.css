@@ -12,6 +12,7 @@
   --color-ivory: #f3f1e8;
   --color-ivory-soft: #aebbac;
   --color-safety: #f0590f;
+  --color-safety-dark: #c7440a;
   --color-hazard: #f2b705;
 }
 
@@ -27,6 +28,7 @@
   --color-ivory: var(--color-ivory);
   --color-ivory-soft: var(--color-ivory-soft);
   --color-safety: var(--color-safety);
+  --color-safety-dark: var(--color-safety-dark);
   --color-hazard: var(--color-hazard);
   --font-sans: var(--font-jakarta);
   --font-display: var(--font-jakarta);
@@ -35,4 +37,55 @@
 body {
   background: var(--color-paper);
   color: var(--color-ink);
+}
+
+@keyframes draw-stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes grow-up {
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes reveal-fade {
+  to {
+    opacity: 1;
+  }
+}
+
+.diagram-stroke {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: draw-stroke 0.7s ease-out forwards;
+  animation-delay: var(--diagram-delay, 0s);
+}
+
+.diagram-grow {
+  transform-origin: bottom;
+  transform: scaleY(0);
+  opacity: 0;
+  animation: grow-up 0.5s ease-out forwards;
+  animation-delay: var(--diagram-delay, 0s);
+}
+
+.diagram-fade {
+  opacity: 0;
+  animation: reveal-fade 0.5s ease-out forwards;
+  animation-delay: var(--diagram-delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .diagram-stroke,
+  .diagram-grow,
+  .diagram-fade {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    stroke-dashoffset: 0;
+  }
 }

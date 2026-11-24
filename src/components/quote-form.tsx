@@ -10,6 +10,9 @@ const jobTypes = [
 
 const urgencyOptions = ["Emergency (today)", "This week", "Flexible"];
 
+const fieldClass =
+  "min-h-12 rounded-[4px] border border-paper-line bg-paper px-3.5 py-3 text-base transition-colors focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/15";
+
 export function QuoteForm() {
   return (
     <section id="quote" className="bg-paper px-6 py-[88px] text-ink">
@@ -36,21 +39,13 @@ export function QuoteForm() {
             <label htmlFor="q-name" className="text-sm font-medium">
               Your name
             </label>
-            <input
-              id="q-name"
-              type="text"
-              className="min-h-12 rounded-[4px] border border-paper-line bg-paper px-3.5 py-3 text-base"
-            />
+            <input id="q-name" type="text" className={fieldClass} />
           </div>
           <div className="flex flex-col gap-1.5">
             <label htmlFor="q-phone" className="text-sm font-medium">
               Phone / WhatsApp
             </label>
-            <input
-              id="q-phone"
-              type="tel"
-              className="min-h-12 rounded-[4px] border border-paper-line bg-paper px-3.5 py-3 text-base"
-            />
+            <input id="q-phone" type="tel" className={fieldClass} />
           </div>
           <div className="flex flex-col gap-1.5">
             <label htmlFor="q-area" className="text-sm font-medium">
@@ -60,17 +55,14 @@ export function QuoteForm() {
               id="q-area"
               type="text"
               placeholder="e.g. Hilton, Durban North"
-              className="min-h-12 rounded-[4px] border border-paper-line bg-paper px-3.5 py-3 text-base"
+              className={fieldClass}
             />
           </div>
           <div className="flex flex-col gap-1.5">
             <label htmlFor="q-type" className="text-sm font-medium">
               Type of job
             </label>
-            <select
-              id="q-type"
-              className="min-h-12 rounded-[4px] border border-paper-line bg-paper px-3.5 py-3 text-base"
-            >
+            <select id="q-type" className={fieldClass}>
               {jobTypes.map((type) => (
                 <option key={type}>{type}</option>
               ))}
@@ -80,10 +72,7 @@ export function QuoteForm() {
             <label htmlFor="q-urgency" className="text-sm font-medium">
               How urgent?
             </label>
-            <select
-              id="q-urgency"
-              className="min-h-12 rounded-[4px] border border-paper-line bg-paper px-3.5 py-3 text-base"
-            >
+            <select id="q-urgency" className={fieldClass}>
               {urgencyOptions.map((option) => (
                 <option key={option}>{option}</option>
               ))}
@@ -98,7 +87,7 @@ export function QuoteForm() {
               type="file"
               multiple
               accept="image/*"
-              className="min-h-12 rounded-[4px] border border-dashed border-paper-line p-2.5 text-[15px]"
+              className={`${fieldClass} border-dashed p-2.5 text-[15px]`}
             />
           </div>
           <div className="col-span-full flex flex-col gap-1.5">
@@ -109,12 +98,12 @@ export function QuoteForm() {
               id="q-notes"
               rows={4}
               placeholder="Height, what it's leaning towards, access for vehicles..."
-              className="resize-y rounded-[4px] border border-paper-line bg-paper px-3.5 py-3 text-base"
+              className={`${fieldClass} resize-y`}
             />
           </div>
           <button
             type="button"
-            className="col-span-full min-h-[52px] rounded-[4px] bg-safety p-4 text-[17px] font-semibold text-ivory"
+            className="col-span-full min-h-[52px] rounded-[4px] bg-safety p-4 text-[17px] font-semibold text-ivory transition-colors hover:bg-safety-dark focus:outline-none focus:ring-2 focus:ring-forest/30"
           >
             Send my quote request
           </button>
