@@ -9,11 +9,11 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="border-b border-timber-line bg-bark text-ivory">
+    <header className="bg-forest text-ivory">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-[18px]">
         <Link href="#" className="flex items-center gap-2.5">
           <LogoMark size={26} className="text-safety" />
-          <span className="font-display text-xl font-semibold tracking-tight">
+          <span className="font-display text-xl font-bold tracking-tight">
             RG Timbers
           </span>
         </Link>
@@ -28,7 +28,7 @@ export function SiteHeader() {
           ))}
           <a
             href="#quote"
-            className="rounded-[4px] bg-safety px-[18px] py-3 font-semibold text-ivory"
+            className="rounded-[6px] bg-safety px-[18px] py-3 font-semibold text-ivory"
           >
             Get a quote
           </a>

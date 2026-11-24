@@ -27,22 +27,22 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how" className="bg-bark px-6 py-[88px]">
+    <section id="how" className="bg-paper-soft px-6 py-[88px]">
       <div className="mx-auto flex max-w-6xl flex-col gap-10">
-        <h2 className="font-display text-[clamp(1.9rem,3.5vw,2.6rem)] font-semibold">
+        <h2 className="font-display text-[clamp(1.9rem,3.5vw,2.6rem)] font-extrabold tracking-tight">
           How it works
         </h2>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (
             <div
               key={step.number}
-              className="flex flex-col gap-3 border-t border-safety pt-4"
+              className="flex flex-col gap-3 border-t-2 border-forest pt-4"
             >
-              <span className="font-display text-sm text-ivory-soft">
+              <span className="font-display text-sm font-bold text-safety">
                 {step.number}
               </span>
-              <h3 className="font-display text-lg font-medium">{step.title}</h3>
-              <p className="text-base leading-relaxed text-ivory-soft">
+              <h3 className="font-display text-lg font-bold">{step.title}</h3>
+              <p className="text-base leading-relaxed text-ink-soft">
                 {step.description}
               </p>
             </div>

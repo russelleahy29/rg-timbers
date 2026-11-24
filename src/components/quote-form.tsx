@@ -15,7 +15,7 @@ export function QuoteForm() {
     <section id="quote" className="bg-paper px-6 py-[88px] text-ink">
       <div className="mx-auto flex max-w-6xl flex-wrap gap-12">
         <div className="flex min-w-0 flex-1 basis-[320px] flex-col gap-4">
-          <h2 className="font-display text-[clamp(1.9rem,3.5vw,2.6rem)] font-semibold">
+          <h2 className="font-display text-[clamp(1.9rem,3.5vw,2.6rem)] font-extrabold tracking-tight">
             Get your free quote
           </h2>
           <p className="text-lg leading-relaxed text-ink-soft">

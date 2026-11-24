@@ -11,7 +11,7 @@ export function FellingDiagram() {
         y1="480"
         x2="490"
         y2="480"
-        stroke="var(--color-timber-line)"
+        stroke="var(--color-forest-line)"
         strokeWidth="1.5"
       />
 
@@ -54,14 +54,14 @@ export function FellingDiagram() {
         ≈18m
       </text>
 
-      <rect x="163" y="228" width="16" height="232" fill="var(--color-bark-soft)" stroke="var(--color-ivory)" strokeWidth="1.5" />
+      <rect x="163" y="228" width="16" height="232" fill="var(--color-forest-soft)" stroke="var(--color-ivory)" strokeWidth="1.5" />
       <line x1="140" y1="236" x2="171" y2="210" stroke="var(--color-ivory)" strokeWidth="1.5" />
       <line x1="200" y1="248" x2="171" y2="214" stroke="var(--color-ivory)" strokeWidth="1.5" />
       <line x1="155" y1="252" x2="171" y2="222" stroke="var(--color-ivory)" strokeWidth="1.5" />
 
       <path
         d="M 179 452 L 198 440 L 179 428 Z"
-        fill="var(--color-bark)"
+        fill="var(--color-forest)"
         stroke="var(--color-safety)"
         strokeWidth="1.5"
       />

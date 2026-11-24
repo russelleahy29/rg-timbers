@@ -1,24 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --color-bark: #241b13;
-  --color-bark-soft: #362718;
-  --color-timber-line: #5b4531;
-  --color-paper: #ede8dc;
-  --color-paper-line: #d3c9b4;
-  --color-ink: #241b13;
-  --color-ink-soft: #5b5042;
-  --color-ivory: #f3eee2;
-  --color-ivory-soft: #bfb29b;
-  --color-safety: #e8540f;
+  --color-forest: #163828;
+  --color-forest-soft: #1f4a35;
+  --color-forest-line: #2c4a38;
+  --color-paper: #f5f6f0;
+  --color-paper-soft: #ecefe3;
+  --color-paper-line: #d7dbd0;
+  --color-ink: #16241c;
+  --color-ink-soft: #55645a;
+  --color-ivory: #f3f1e8;
+  --color-ivory-soft: #aebbac;
+  --color-safety: #f0590f;
   --color-hazard: #f2b705;
 }
 
 @theme inline {
-  --color-bark: var(--color-bark);
-  --color-bark-soft: var(--color-bark-soft);
-  --color-timber-line: var(--color-timber-line);
+  --color-forest: var(--color-forest);
+  --color-forest-soft: var(--color-forest-soft);
+  --color-forest-line: var(--color-forest-line);
   --color-paper: var(--color-paper);
+  --color-paper-soft: var(--color-paper-soft);
   --color-paper-line: var(--color-paper-line);
   --color-ink: var(--color-ink);
   --color-ink-soft: var(--color-ink-soft);
@@ -26,11 +28,11 @@
   --color-ivory-soft: var(--color-ivory-soft);
   --color-safety: var(--color-safety);
   --color-hazard: var(--color-hazard);
-  --font-sans: var(--font-work-sans);
-  --font-display: var(--font-oswald);
+  --font-sans: var(--font-jakarta);
+  --font-display: var(--font-jakarta);
 }
 
 body {
-  background: var(--color-bark);
-  color: var(--color-ivory);
+  background: var(--color-paper);
+  color: var(--color-ink);
 }
