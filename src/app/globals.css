@@ -34,6 +34,16 @@
   --font-display: var(--font-jakarta);
 }
 
+html {
+  scroll-padding-top: 88px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background: var(--color-paper);
   color: var(--color-ink);
