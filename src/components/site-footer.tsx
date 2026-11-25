@@ -6,9 +6,16 @@ export function SiteFooter() {
           RG Timbers
         </span>
         <span className="flex items-center gap-4">
-          <span>[YOUR NUMBER]</span>
+          <a href="tel:+27824643285" className="transition-colors hover:text-ivory">
+            082 464 3285
+          </a>
           <span className="h-4 w-px bg-forest-line" aria-hidden="true" />
-          <span>[YOUR EMAIL]</span>
+          <a
+            href="mailto:russelleahy29@gmail.com"
+            className="transition-colors hover:text-ivory"
+          >
+            russelleahy29@gmail.com
+          </a>
         </span>
         <span>All work carried out by insured, vetted local specialists.</span>
       </div>

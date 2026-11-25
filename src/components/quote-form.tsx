@@ -27,11 +27,11 @@ export function QuoteForm() {
           </p>
           <p className="text-base leading-relaxed text-ink-soft">
             Prefer WhatsApp? Send photos to{" "}
-            <strong className="text-ink">[YOUR NUMBER]</strong>.
+            <strong className="text-ink">082 464 3285</strong>.
           </p>
           <p className="text-base leading-relaxed text-ink-soft">
             Emergency, tree already down? Call{" "}
-            <strong className="text-ink">[YOUR NUMBER]</strong>.
+            <strong className="text-ink">082 464 3285</strong>.
           </p>
         </div>
         <form className="box-border grid min-w-0 flex-[2_1_520px] grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-5 border border-paper-line p-[clamp(20px,4vw,36px)]">

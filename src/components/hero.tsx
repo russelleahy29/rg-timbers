@@ -27,7 +27,7 @@ export function Hero() {
               Get a free quote
             </a>
             <a
-              href="https://wa.me/"
+              href="https://wa.me/27824643285"
               className="flex items-center gap-2.5 rounded-[4px] border border-forest-line px-6 py-3.5 text-[17px] font-semibold text-ivory transition-colors hover:border-ivory-soft hover:bg-forest-soft"
             >
               <WhatsAppIcon size={20} />
